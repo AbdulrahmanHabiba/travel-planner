@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Travel Planner
+
+A modern web app to help you plan your trips around the world, organize destinations, and create detailed itineraries for each journey.
+
+## Features
+
+- Sign in with GitHub
+- Create, edit, and manage trips with multiple locations
+- Interactive map and 3D globe visualization
+- Track visited countries and travel statistics
+- Modern UI with dark mode support
+
+## Technologies Used
+
+- Next.js 15
+- TypeScript
+- Prisma + PostgreSQL
+- TailwindCSS
+- Flowbite React
+- React Leaflet & react-globe.gl
+- UploadThing for image uploads
+- NextAuth for authentication
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Create a PostgreSQL database and add environment variables in `.env`:
+   ```
+   DATABASE_URL=postgres://user:password@localhost:5432/dbname
+   GEOAPIFY_API_KEY=your_api_key
+   ```
+3. Run Prisma migrations:
+   ```bash
+   npx prisma migrate dev
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `app/` - Application pages
+- `components/` - UI components
+- `lib/` - Utilities and server functions
+- `prisma/` - Database schema and seeds
+- `public/` - Static files and images
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Contributions and suggestions are welcome! Open an Issue or Pull Request on [GitHub](https://github.com/username/travel-planner).
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
+MIT License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Contact:**  
+[Abdulrahman Habiba](mailto:abdulrahman@example.com)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
