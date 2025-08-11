@@ -1,0 +1,11 @@
+{
+  "build": {
+    "env": {},
+    "hooks": {
+      "prebuild": "npx prisma generate"
+    }
+  },
+  "scripts": {
+    "build": "npx prisma generate && next build"
+  }
+}
