@@ -25,7 +25,7 @@ export default function AuthButton({
   };
 
   return (
-    <button onClick={handleClick} className={`py-2 px-4 rounded-2xl   text-card-main ${className || ''}`}>
+    <button onClick={handleClick} className={`py-3 px-5 rounded-2xl ${className || ''}`}>
       {children}
     </button>
   );

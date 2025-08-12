@@ -58,9 +58,6 @@ export default function GlobePage() {
     </h1>
   );
 
-  // Theme toggle button
-  // Theme toggle button
-
   if (error) {
     return (
       <div className="min-h-screen">
